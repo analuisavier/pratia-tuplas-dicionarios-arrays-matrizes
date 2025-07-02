@@ -342,6 +342,15 @@ precos_com_desconto = [(item, float(preco) * 0.9) for item, preco in precos]
 print(precos_com_desconto)
 format()
 
+# 3.8 Modifique o desconto aplicado acima para ser de 15% e imprima todos os valores originais e com desconto no formato, o <item> custava <preco_original>, agora custa <preco_com_desconto>.
+
+separador('3.8')
+for item, preco in precos:
+    preco = float(preco)
+    preco_com_desconto = preco * 0.85
+    print(f"O {item} custava R${preco:.2f}, agora custa R${preco_com_desconto:.2f}")
+format()
+
 # 3.9 Dados o array de quantidades quantidades = np.array([1, 2, 3]) e o array de preços unitários precos_unitarios = np.array([15.0, 30.0, 22.5]), calcule o valor total por item multiplicando os dois arrays.
 
 separador('3.9')
